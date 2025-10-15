@@ -1,0 +1,23 @@
+import sympy as sp
+x = sp.Symbol('x') # defining variable
+try:
+#equation split at the '=' sign
+left_expr, right expr = equation.split('=')
+
+#use sympy
+left = sp.sympify
+right = sp.sympify
+
+#solve equation
+solution = sp.solve(left - right, x)
+return solution
+
+except Exception as e:
+  return f"Error: {e}"
+
+  #example usage
+  if _name_ == "_main_":
+  print("Enter a linear equation (e.x., 2*x + 3 = 7):")
+  user_input = input(">")
+  result = solve_equation(user_input)
+  print(f"Solution: x = {result[0]}" if result else "No solution found.")
