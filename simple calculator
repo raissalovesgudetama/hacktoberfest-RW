@@ -2,15 +2,19 @@
 
 def calculator(a, b, operation):
   if operation == '+':
+  print("Performing addition...")
       return a + b
   elif operation == '-':
+  print("Performing subtraction...")
       return a - b
   elif operation == '*':
+  print("Performing multiplication...")
       return a * b
   elif operation == '/':
-      return a / b
-  else:
-      return "Invalid operation"
+    if b == 0:
+        return "Error: Division by zero"
+    print("Performing division...")
+    return a / b
 
 #EXAMPLE
 if _name_ == "_main_":
