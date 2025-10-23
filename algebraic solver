@@ -17,7 +17,7 @@ except Exception as e:
 
   #example usage
   if _name_ == "_main_":
-  print("Enter a linear equation (e.x., 2*x + 3 = 7):")
+  print("Enter a linear equation (e.x., 3*x + 3 = 9):")
   user_input = input(">")
   result = solve_equation(user_input)
   print(f"Solution: x = {result[0]}" if result else "No solution found.")
