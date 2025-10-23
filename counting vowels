@@ -10,3 +10,9 @@ def count_vowels(text):
 if _name_ == "_main_":
     sentence = input("Enter a sentence: ")
     print("Number of vowels:", count_vowels(sentence))
+if total_vowels == 0:
+    print("No vowels were detected in the text.")
+elif total_vowels < 5:
+    print("A small number of vowels were found in the text.")
+else:
+    print("A significant number of vowels were identified in the text.")
