@@ -1,11 +1,11 @@
 text to binary
 
 def text_to_binary(text):
-  binary_list =[]
-for char in text:
-  binary = format(ord(char), '08b') #convert character to binary ITS EIGHT BITS
-  binary_list.append(binary)
-return ' '.join(binary_list)
+    binary_list = []
+    for char in text:
+        binary = format(ord(char), '08b')  # convert character to 8-bit binary
+        binary_list.append(binary)
+    return ' '.join(binary_list)
 
 #example
 if _name_ == "_main_":
